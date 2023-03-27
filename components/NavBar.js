@@ -1,15 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const NavBar = () => {
   return (
     <header className="flex p-5 md:p-10 md:px-20 top-0 items-center justify-between ">
+      <Link href={"/"}>
       <Image src="/logo.png" alt="logo" width={80} height={50} />
-      <div className="hidden md:flex space-x-10 text-[#3A3A3A] ">
+      </Link>
+      <div className="hidden md:flex md:space-x-5 xl:space-x-10 text-[#3A3A3A] ">
         <h1 className="text-base">Find Reservation</h1>
         <h1 className="text-base">Packages</h1>
         <h1 className="text-base">About Lakshadeep</h1>
+        <Link href={"./about-us"}>
         <h1 className="text-base">About Us</h1>
+        </Link>
         <h1 className="text-base">Gol</h1>
         <h1 className="text-base">Support</h1>
       </div>
