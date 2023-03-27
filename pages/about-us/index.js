@@ -1,6 +1,6 @@
 import NavBar from "../../components/NavBar";
 
-const index = () => {
+const AboutUs = () => {
   return (
     <div className="relative bg-gradient-to-b from-[#c4ebf7] h-[100vh] opacity-80-100 to-[#FFFFFF]/10">
       <NavBar />
@@ -131,4 +131,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default AboutUs;
