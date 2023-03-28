@@ -1,6 +1,6 @@
 import React from "react";
 
-const PackagesCards = () => {
+const PackagesCards = ({img}) => {
   // const bestPackages = [
   //   {
   //     place: "Indonesia",
@@ -29,7 +29,7 @@ const PackagesCards = () => {
       <div className="h-[516px] w-[390px] bg-[#FFFFFF] shadow-md rounded-md">
         <img
           className="w-full h-[352px] rounded-t-md"
-          src={"/indonesia.png"}
+          src={img}
           alt=""
         />
         <div className="flex p-5 space-x-3">

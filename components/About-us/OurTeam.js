@@ -1,24 +1,8 @@
-import NavBar from "../../components/NavBar";
 
-const AboutUs = () => {
+const OurTeam = () => {
   return (
-    <div className="relative bg-gradient-to-b from-[#c4ebf7] h-[100vh] opacity-80-100 to-[#FFFFFF]/10">
-      <NavBar />
-
-      {/* hero */}
-      <div className="top-[128px] z-1 flex justify-center items-center mx-auto">
-        <img
-          className="w-[896.39px] h-[445.34px] object-cover"
-          src="/vector.png"
-          alt=""
-        />
-        <h1 className="text-[#3A3A3A] text-2xl md:text-5xl absolute font-bold z-10">
-          About Us
-        </h1>
-      </div>
-
-      {/* our team */}
-      <div
+    <>
+         <div
         className="relative z-10 
         bg-[#F6FDFF] mt-36 p-10 max-w-7xl mx-auto h-[216px] flex flex-col items-center justify-center space-y-7"
       >
@@ -93,42 +77,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+    </>
+  )
+}
 
-      {/* Certificate */}
-      <div className="max-w-7xl bg-[#F5F5F5] mx-auto mt-20 flex flex-col items-center p-10">
-        <h1 className="text-[#3A3A3A] text-2xl md:text-3xl font-normal mx-auto">
-          Certificate
-        </h1>
-        <h4 className="text-sm font-light mt-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id turpis
-          sodales, facilisis massa at, rutrum eros.
-        </h4>
-
-        <div className="grid grid-cols-2 gap-x-5 gap-y-10 mt-7 ">
-          <img
-            className="h-[355px] w-[601px] object-cover rounded-md"
-            src="/person/video.png"
-            alt=""
-          />
-          <img
-            className="h-[355px] w-[601px] object-cover rounded-md"
-            src="/person/video.png"
-            alt=""
-          />
-          <img
-            className="h-[355px] w-[601px] object-cover rounded-md"
-            src="/person/video.png"
-            alt=""
-          />
-          <img
-            className="h-[355px] w-[601px] object-cover rounded-md"
-            src="/person/video.png"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default AboutUs;
+export default OurTeam
