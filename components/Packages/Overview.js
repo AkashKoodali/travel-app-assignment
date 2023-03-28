@@ -7,7 +7,7 @@ import { HiOfficeBuilding, HiOutlineCalendar } from "react-icons/hi";
 const Overview = () => {
   return (
     <>
-         <div className="max-w-7xl mt-20 mx-auto flex gap-3 flex-col md:flex-row md:justify-between">
+      <div className="max-w-7xl mt-20 mx-auto flex gap-3 flex-col md:flex-row md:justify-between">
         <div className="w-[699px] flex flex-col gap-5">
           <div
             className="w-full h-[64px] p-5
@@ -104,6 +104,39 @@ const Overview = () => {
               </div>
             </div>
 
+            {/*  */}
+            <div className="w-full gap-y-3 flex justify-between items-center">
+              <div className="flex flex-col space-y-3">
+                <span className="text-[#3A3A3A]">Adult</span>
+                <div className="w-[120px] h-[42px] border-[#A2A8AB] rounded-md border flex items-center justify-between">
+                  <span className="border-r flex items-center justify-center text-2xl font-light cursor-pointer border-[#A2A8AB] h-full w-1/3">
+                    -
+                  </span>
+                  <span className="flex items-center bg-[#F6FDFF] justify-center text-lg font-light h-full w-1/3">
+                    2
+                  </span>
+                  <span className="border-l flex items-center justify-center text-2xl px-2 font-light cursor-pointer border-[#A2A8AB] h-full w-1/3">
+                    +
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex flex-col space-y-3">
+                <span className="text-[#3A3A3A]">Child</span>
+                <div className="w-[120px] h-[42px] border-[#A2A8AB] rounded-md border flex items-center justify-between">
+                  <span className="border-r flex items-center justify-center text-2xl font-light cursor-pointer border-[#A2A8AB] h-full w-1/3">
+                    -
+                  </span>
+                  <span className="flex items-center bg-[#F6FDFF] justify-center text-lg font-light h-full w-1/3">
+                    3
+                  </span>
+                  <span className="border-l flex items-center justify-center text-2xl px-2 font-light cursor-pointer border-[#A2A8AB] h-full w-1/3">
+                    +
+                  </span>
+                </div>
+              </div>
+            </div>
+
             <div className="w-full space-y-5">
               <div className="flex items-center gap-3">
                 <span className="text-[#3A3A3A]">Contact Deails</span>
@@ -133,7 +166,7 @@ const Overview = () => {
                 </div>
 
                 <div className="w-full h-[42px] border-[#A2A8AB] rounded-md border flex items-center justify-start pl-2 gap-2">
-                    <TbPhonePlus className="text-[#9A9A9A] h-[15px] w-[15px]" />
+                  <TbPhonePlus className="text-[#9A9A9A] h-[15px] w-[15px]" />
                   <input
                     className="font-thin text-sm outline-none bg-transparent"
                     type="text"
@@ -150,7 +183,7 @@ const Overview = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default Overview;

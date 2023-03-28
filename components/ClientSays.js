@@ -12,7 +12,7 @@ const ClientSays = () => {
           About Us
         </h1>
 
-        <div className="flex flex-col gap-y-6 justify-center items-center md:flex-row max-w-7xl mx-auto mt-10 gap-x-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 justify-center items-center md:flex-row max-w-7xl mx-auto mt-10 gap-x-8 ">
           <ClientCard />
           <ClientCard />
           <ClientCard />

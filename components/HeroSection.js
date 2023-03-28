@@ -2,7 +2,7 @@ import { FaCompass } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full max-w-full mx-auto flex flex-col-reverse space-y-20 items-start justify-center md:flex-row md:items-center">
+    <div className="relative w-full mx-auto flex flex-col-reverse space-y-20 items-start justify-center lg:flex-row md:items-center">
 
       {/* left */}
       <div className="ml-10 md:ml-20 lg:ml-30 ">
@@ -23,10 +23,10 @@ const HeroSection = () => {
       </div>
 
        {/* right */}
-       <div className="w-screen h-full md:w-[950px] md:h-[800px] flex justify-center">
-        <img className="w-full h-full bg-cover " src="/map.png" alt=""/>
-        <div className="absolute top-8 w-[400px] h-[400px] md:w-[500px] lg:h-[500px]">
-          <img className="absolute w-full overflow-hidden h-full object-contain z-10" src="/bg.png" alt="" />
+       <div className="h-full sm:w-screen lg:w-[950px] lg:h-[800px] flex justify-center">
+        <img className="w-full h-full mx-auto bg-cover " src="/map.png" alt=""/>
+        <div className="absolute top-8 w-[250px] h-[250px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] overflow-hidden">
+          <img className=" w-full overflow-hidden h-full object-contain z-10" src="/bg.png" alt="" />
           <img className="absolute w-full overflow-hidden h-full object-fill bottom-3 right-3 top-1 z-30" src="/people.png" alt="" />
         </div>
       </div>
