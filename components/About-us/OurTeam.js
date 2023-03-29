@@ -4,7 +4,7 @@ const OurTeam = () => {
     <>
          <div
         className="relative z-10 
-        bg-[#F6FDFF] mt-36 p-10 max-w-7xl mx-auto h-[216px] flex flex-col items-center justify-center space-y-7"
+        bg-[#F6FDFF] mt-36 p-10 max-w-7xl mx-auto h-[216px] flex flex-col rounded-md items-center justify-center space-y-7"
       >
         <h1 className="text-[#3A3A3A] text-2xl md:text-3xl font-normal">
           Our Team
@@ -19,35 +19,35 @@ const OurTeam = () => {
         <div className="flex flex-col items-center justify-center gap-y-2">
           <div className="w-[64px] h-[64px]">
             <img
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover cursor-pointer"
               src="/person/Oval.png"
               alt=""
             />
           </div>
           <div className="w-[64px] h-[64px]">
             <img
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover cursor-pointer"
               src="/person/Oval1.png"
               alt=""
             />
           </div>
           <div className="w-[64px] h-[64px]">
             <img
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover cursor-pointer"
               src="/person/Oval3.png"
               alt=""
             />
           </div>
           <div className="w-[64px] h-[64px]">
             <img
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover cursor-pointer"
               src="/person/Oval4.png"
               alt=""
             />
           </div>
           <div className="w-[64px] h-[64px]">
             <img
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover cursor-pointer"
               src="/person/Oval5.png"
               alt=""
             />

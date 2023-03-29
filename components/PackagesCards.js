@@ -4,7 +4,8 @@ const PackagesCards = (props) => {
 
   return (
     <>
-      <div className="w-[296px] h-[400px] md:h-[516px] pb-4 md:w-[390px] bg-[#FFFFFF] flex-1 flex justify-between flex-col shadow-md rounded-md">
+      <div className="w-[296px] h-[400px] md:h-[516px] pb-4 md:w-[390px] bg-[#FFFFFF] flex-1 flex justify-between flex-col shadow-xl hover:scale-105 
+  hover:shadow-2xl transition-all duration-200 ease-out rounded-md">
             <div className="relative">
               <img
                 className="w-full h-[200px] md:h-[352px] rounded-t-md"

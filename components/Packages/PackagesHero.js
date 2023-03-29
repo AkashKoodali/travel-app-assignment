@@ -1,4 +1,5 @@
 import { AiOutlineSearch } from "react-icons/ai";
+// import Circles from "../Circles";
 
 const PackagesHero = () => {
   return (
@@ -13,6 +14,7 @@ const PackagesHero = () => {
           <h1 className="text-[#3A3A3A] text-2xl md:text-5xl font-bold z-10">
             Maldives
           </h1>
+          {/* <Circles /> */}
           <div className="w-[428px] h-[60px] flex items-center justify-between rounded-full overflow-hidden border-2 border-[#979C9E]">
             <input
               className="h-full bg-transparent p-5 outline-none"

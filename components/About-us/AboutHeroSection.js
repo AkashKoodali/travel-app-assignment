@@ -1,3 +1,4 @@
+import Circles from "../Circles";
 
 const AboutHeroSection = () => {
   return (
@@ -8,9 +9,12 @@ const AboutHeroSection = () => {
           src="/vector.png"
           alt=""
         />
-        <h1 className="text-[#3A3A3A] text-2xl md:text-5xl absolute font-bold z-10">
-          About Us
-        </h1>
+        <div className="absolute flex flex-col mx-auto items-center gap-10">
+          <h1 className="text-[#3A3A3A] mt-20 text-2xl md:text-5xl font-bold whitespace-nowrap z-10">
+            About Us
+          </h1>
+          <Circles />
+        </div>
       </div>
     </>
   )
