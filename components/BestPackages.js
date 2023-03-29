@@ -1,29 +1,31 @@
 import PackagesCards from "./PackagesCards";
 
-const BestPackages = () => {
-  const bestPackages = [
-    {
-      place: "Indonesia",
-      amount: "₹500",
-      des: "Explore the Beauty of the island for 3 days and 2 nights with our travata agency...",
-      rating: 4.5,
-      img: "/indonesia.png",
-    },
-    {
-      place: "Indonesia",
-      amount: "₹500",
-      des: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency...",
-      rating: 4.5,
-      img: "/indonesia1.png",
-    },
-    {
-      place: "Indonesia",
-      amount: "₹500",
-      des: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency...",
-      rating: 4.5,
-      img: "/indonesia2.png",
-    },
-  ];
+
+const BestPackages = (collections) => {
+  console.log(collections);
+  // const bestPackages = [
+  //   {
+  //     place: "Indonesia",
+  //     amount: "₹500",
+  //     des: "Explore the Beauty of the island for 3 days and 2 nights with our travata agency...",
+  //     rating: 4.5,
+  //     img: "/indonesia.png",
+  //   },
+  //   {
+  //     place: "Indonesia",
+  //     amount: "₹500",
+  //     des: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency...",
+  //     rating: 4.5,
+  //     img: "/indonesia1.png",
+  //   },
+  //   {
+  //     place: "Indonesia",
+  //     amount: "₹500",
+  //     des: "Explore the Beauty of the island for 3 days and 2 nights with our travel agency...",
+  //     rating: 4.5,
+  //     img: "/indonesia2.png",
+  //   },
+  // ];
   return (
     <>
       <div className="flex flex-col items-center mt-10 md:mt-0 justify-center w-full mx-auto gap-5">
@@ -53,11 +55,14 @@ const BestPackages = () => {
 
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 m-10 mx-auto">
-      {
-      bestPackages.map((data, index) => (
-        <PackagesCards key={index} {...data}/>
-        ))
-        }
+    {
+      collections.collections.map((collection) => (
+        // console.log(collection)
+        <PackagesCards key={collection.length} {...collection}/>
+      ))
+    }
+        {/* <PackagesCards /> */}
+      
       </div>
       </div>
     </>
@@ -65,3 +70,4 @@ const BestPackages = () => {
 };
 
 export default BestPackages;
+
