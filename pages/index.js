@@ -7,7 +7,9 @@ import ContactCard from "../components/ContactCard";
 import ClientSays from "../components/ClientSays";
 import DiscoverButton from "../components/DiscoverButton";
 
-export default function Home() {
+import { sanityClient, urlFor } from '../sanity';
+
+export default function Home(collections) {
   return (
     <Layout >
       <Head>
@@ -21,7 +23,10 @@ export default function Home() {
       <HeroSection />
 
       {/* Best packages */}
-      <BestPackages />
+      {
+        collections ? <BestPackages {...collections} /> : <h1>Loading...</h1>
+      }
+      
       
      {/* Discover Button */}
      <DiscoverButton />
@@ -37,4 +42,41 @@ export default function Home() {
       </div>
     </Layout>
   );
-}
+};
+
+export const getServerSideProps = async () => {
+  const query = `*[_type == "packages"]{
+    _id,
+    place,
+    amount,
+    rating,
+    categories,
+    publishedAt,
+    description,
+    mainImage{
+    asset,
+  },
+  previewImage{
+    asset
+  },
+  category-> {
+    _id,
+    title,
+    description,
+  },
+  }`
+
+  const collections = await sanityClient.fetch(query);
+  console.log(collections);
+
+  return {
+    props: {
+      collections
+    }
+  }
+   
+};
+
+
+
+
